@@ -1,0 +1,12 @@
+.parallax { 
+background-image: url("docs/assets/Wave01.png");
+
+/*Set height */ 
+height: 100%;
+
+/* Create parallax effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; }
+}
