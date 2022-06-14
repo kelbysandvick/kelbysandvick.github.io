@@ -1,12 +1,25 @@
 .parallax { 
-background-image: url("https://github.com/kelbysandvick/kelbysandvick.github.io/blob/0eec8204720537538a3a7239a474ec8a49168db7/docs/assets/Wave01.png");
+	background-image: url("https://github.com/kelbysandvick/kelbysandvick.github.io/blob/0eec8204720537538a3a7239a474ec8a49168db7/docs/assets/Wave01.png");
 
-/*Set height */ 
-height: 100%;
+	/*Set height */ 
+	height: 100%;
+	
+	/* Create parallax effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
-/* Create parallax effect */
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover; }
+#wave01 {
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+}
+
+#wave02 {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	top: 400;
 }
