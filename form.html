@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>Test form</title>
+	<link rel="stylesheet" href="formstyle.css">
+</head>
+  
+<body>
+    <h1>Sample Guest Survey Form</h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+  
+  
+        <div class="form-control">
+            <label for="dropdown" id="label-dropdown">
+                This is a dropdown question
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="dropdown" id="dropdown">
+                <option value="default">Default Option</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Other</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label>
+                Are you enjoying your stay so far?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed" value="yes">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed" value="no">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed">Maybe</input>
+            </label>
+        </div>
+  
+        <div class="form-control">
+            <label>This is a checkbox entry
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">1</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">2</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">3</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">4</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">5</input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">6</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">7</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">8</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">9</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">10</input></label>
+        </div>
+  
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" id="submit">
+            Submit
+        </button>
+		
+		<script>
+			document.getElementById("submit").addEventListener("click", redirectFunction);
+			
+			function redirectFunction() {
+				if(document.getElementsByName("recommed").value = "yes"){
+					window.location.href="positiveResponse.html";
+					alert("Enjoying stay");
+				}
+				else if(document.getElementsByName("recommed").value = "no") {
+					console.log("Not enjoying stay");
+				}
+			}
+    </script>
+	
+	
+    </form>
+</body>
+  
+</html>
